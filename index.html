@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/my_screen.css">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Baloo|Love+Ya+Like+A+Sister|Nothing+You+Could+Do" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
+
+  <script class="catagoriDropDown" type="text/x-handlebars-template">
+
+      <option value="Catagories">Categories</option>
+      {{#each catagory}}
+      <option class="dropdown" data-dropdown-type="{{this}}">{{this}}</option>
+      {{/each}}
+
+
+  </script>
+  <script class="dropdownNav" type="text/x-handlebars-template">
+    <ul>
+      <li>
+        <a>Contacts</a>
+        <ul>
+          {{#each cont}}
+          <li><a>{{this}}</a></li>
+          {{/each}}
+        </ul>
+      </li>
+      <li>
+        <a>Category</a>
+        <ul>
+          {{#each key}}
+
+                <li><a  id="menu" data-menu-type="{{this}}">{{this}} Quotes </a></li>
+
+          {{/each}}
+        </ul>
+      </li>
+    </ul>
+  </script>
+
+  <title>myScreen</title>
+</head>
+
+<body>
+
+  <h1>Quote of the Day</h1>
+
+  <div class="displayNav">
+
+  </div>
+  <button class="writer" type="button" align="center">Write own Quote</button>
+
+  <div class="displayImages">
+
+  </div>
+
+<div class="inputContainer">
+<div class="nameInput">
+Prefered Name: <input type="text" class="nameTxt" placeholder="Sivu"  height="10px">
+</div>
+<div class="dropDiv">
+<select class="categoryDropdown">
+
+</select>
+</div>
+<div class="writeOwnQuote">
+<textarea name="name" class="QuoteTxt" rows="8" cols="40" placeholder="Quote"></textarea>
+</div>
+<div class="addButn">
+<button class="adding" type="button" align="center">Add</button>
+</div>
+</div>
+
+  <script class="myImages" type="text/x-handlebars-template">
+    {{#each img}}
+      {{#if isImage}}
+        <img class="motiv {{className}}" src="{{img}}">
+      {{/if}}
+      {{#if isText}}
+        <div class="myQuotes">
+        <h4>{{text}} </h4>
+        <h5> {{by}}</h5>
+      </div>
+      {{/if}}
+    {{/each}}
+  </script>
+  <script src="js/my_screen.js" charset="utf-8"></script>
+
+</body>
+</html>

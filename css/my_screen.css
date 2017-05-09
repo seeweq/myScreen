@@ -1,0 +1,116 @@
+.inputContainer {
+ display: none;
+  background-color: maroon;
+}
+.dropDiv{
+  margin-left: 10%;
+}
+body{
+  background-image: url('/home/bootcamp/projects/my_screen/images/bck.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.nameInput{
+  margin-left: 20px;
+}
+.catInput{
+  margin-left: 40px;
+}
+.writeOwnQuote{
+  margin-left: 15px;
+}
+.displayNav ul{
+  margin:0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.displayNav ul li{
+  float: left;
+  width: 200px;
+  background-color: blue;
+  line-height: 40px;
+  text-align: center;
+  opacity: .9;
+}
+
+.displayNav ul li a{
+  text-decoration: none;
+  display: block;
+}
+
+.displayNav ul li  a:hover{
+  background-color: pink;
+}
+
+.displayNav ul li ul li{
+  display: none;
+}
+
+.displayNav ul li:hover ul li{
+  display: block;
+}
+.adding{
+  margin-left: 1%;
+  background-color: grey;
+
+}
+.writer{
+  margin-left: 5%;
+  background-color: blue;
+}
+
+.small {
+  height: 10em;
+}
+
+.medium {
+  height: 20em;
+}
+.displayImages {
+  margin-top: 300px;
+  background: radial-gradient(rgba(0, 0, 0, 0.5), rgba(255, 0, 0, 0.5));
+
+}
+.motiv {
+  border-radius: 20%;
+  margin-right:18%;
+  margin-left: 7px;
+  border:1px solid pink;
+  padding: 5px;
+}
+
+img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+h1{
+font-size: 70px;
+font-family: 'Baloo', cursive;
+font-family: 'Love Ya Like A Sister', cursive;
+font-family: 'Nothing You Could Do', cursive;
+text-align: center;
+color:blue;
+}
+.myQuotes{
+  text-align: center;
+  background-color: maroon;
+  height: 250px;
+  width: 200px;
+  margin-left: 15px;
+  border-radius: 10%;
+
+}
+h4{
+  display: inline-block;
+  font-size: 20px;
+  color: pink;
+  padding-top: 30px;
+  font-family: 'Quicksand', sans-serif;
+}
+h5{
+  display: inline-block;
+  font-size: 20px;
+  color: pink;
+  padding-top: 5px;
+  text-shadow: .1em .1em .15em
+}
